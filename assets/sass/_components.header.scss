@@ -1,0 +1,28 @@
+// Header
+
+.header {
+   z-index: 1;
+   position: fixed;
+   top: 50%;
+   left: 26px;
+   transform: translateY(-50%) rotate(-180deg);
+   
+   &__nav {
+      line-height: normal;
+      writing-mode: tb;
+   }
+
+   &__link {
+      display: inline-block;
+      margin-bottom: 56px; 
+      font-size: 0.857em;
+      font-weight: 600;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $color-text-dark;
+
+      &:last-child {
+         margin-bottom: 0;
+      }
+   }
+}

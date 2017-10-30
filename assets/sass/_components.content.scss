@@ -1,0 +1,11 @@
+// Layout Content
+
+.content {
+   z-index: 1;
+   flex: 1 0 auto;
+   padding: 24px;
+
+   @include media(min, sm) {
+      padding: 180px 72px 72px;
+   }
+}

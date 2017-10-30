@@ -1,0 +1,66 @@
+// General Styles
+
+html {
+   font-size: 89.9%;
+
+   @include media(min, sm) {
+      font-size: 100%;
+   }
+}
+
+body {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   height: 100vh;
+   min-height: 568px;
+   font-family: $font-family-primary;
+   font-size: $font-size;
+   line-height: ($line-height - 4px);
+   letter-spacing: 0.3px;
+   word-spacing: 2px;
+   color: $color-text;
+
+   &::before,
+   &::after {
+      z-index: 0;
+      content: " ";
+      position: absolute;
+      width: 30%;
+      height: calc(100% - 72px);
+   }
+
+   &::before {
+      bottom: 0;
+      left: 0;
+      background-color: $color-primary;
+   }
+
+   &::after {
+      top: 0;
+      right: 0;
+      max-height: 648px;
+      background-color: $color-secondary;
+   }
+
+   @include media(min, sm) {
+      line-height: $line-height;
+
+      &::before {
+         left: 72px;
+      }
+
+      &::after {
+         right: 72px;
+      }
+   }
+}
+
+::selection {
+   text-shadow: none;
+   background-color: transparent;
+}
+
+strong {
+   font-weight: 600;
+}

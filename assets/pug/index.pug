@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		title Eliezer Pujols
+
+		// Fonts
+		link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i|Playfair+Display",rel="stylesheet")
+
+		// CSS Files
+		link(href="assets/css/folio.css", rel="stylesheet")
+
+	body
+		// Logo
+		h2(class="logo") Eliezer Pujols
+		
+		// Header
+		include includes/header
+
+		// Content
+		main(class="content")
+			.wrapper
+				h1 My Story
+
+				p I just design and code for fun. I am deeply passionate about interaction design, illustrations, photography and I love playing the piano. Making beautiful and minimalist things is my passion.
+
+				p I have done very unique presentation at Microsoft in The Dominican Republic, and I often post some article in <a href="">Intern Life</a>. Follow me on any of my social media account to stay updated with my awesome work.
+		
+		// Social
+		include includes/social
+
+		// JS Files
+		script(src="assets/js/folio.js")
