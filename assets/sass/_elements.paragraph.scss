@@ -3,4 +3,8 @@
 p {
    text-align: justify;
    margin-bottom: 28px;
+
+   &:last-child {
+      margin-bottom: 0;
+   }
 }

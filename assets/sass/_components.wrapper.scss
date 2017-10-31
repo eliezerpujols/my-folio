@@ -1,8 +1,21 @@
 // Wrapper
 
-.wrapper {
+.wrap {
+   display: flex;
+   flex-wrap: wrap;
+   align-content: space-between;
+   min-height: calc(100vh - 253px);
    width: 100%;
-   max-width: 600px;
+   max-width: 648px;
    margin-left: auto;
    margin-right: auto;
+   padding-left: 24px;
+   padding-right: 24px;
+
+   .wrap__item {
+      &:last-child {
+         margin-top: 96px;
+         height: 24px;
+      }
+   }
 }

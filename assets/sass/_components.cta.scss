@@ -1,0 +1,24 @@
+// CTA
+
+.button-action {
+   position: relative;
+   font-size: 0.857em;
+   font-weight: 600;
+   text-decoration: none;
+   text-transform: uppercase;
+   color: $color-text-dark;
+
+   &::after {
+      content: " ";
+      position: absolute;
+      top: 7px;
+      left: calc(100% + 16px);
+      width: 56px;
+      height: 1px;
+      background-color: $color-line-gray;
+   }
+   
+   &:hover {
+      cursor: pointer;
+   }
+}

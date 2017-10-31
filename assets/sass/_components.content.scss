@@ -2,10 +2,12 @@
 
 .content {
    z-index: 1;
+   position: relative;
    flex: 1 0 auto;
-   padding: 24px;
+   padding-top: 140px;
+   padding-bottom: 36px;
 
-   @include media(min, sm) {
-      padding: 180px 72px 72px;
+   @include media(min, md) {
+      padding: 180px 48px 72px;
    }
 }
