@@ -9,11 +9,6 @@ html {
 }
 
 body {
-   position: relative;
-   display: flex;
-   flex-direction: column;
-   height: 100vh;
-   min-height: 568px;
    font-family: $font-family-primary;
    font-size: $font-size;
    line-height: ($line-height - 4px);
@@ -25,7 +20,7 @@ body {
    &::after {
       z-index: 0;
       content: " ";
-      position: absolute;
+      position: fixed;
       width: 30%;
       height: calc(100% - 72px);
    }
@@ -43,7 +38,7 @@ body {
       background-color: $color-secondary;
    }
 
-   @include media(min, sm) {
+   @include media(min, md) {
       line-height: $line-height;
 
       &::before {

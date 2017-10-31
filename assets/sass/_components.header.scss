@@ -1,28 +1,64 @@
-// Header
+// Logo
 
 .header {
-   z-index: 1;
-   position: fixed;
-   top: 50%;
-   left: 26px;
-   transform: translateY(-50%) rotate(-180deg);
-   
-   &__nav {
-      line-height: normal;
-      writing-mode: tb;
+   z-index: 4;
+   position: absolute;
+   top: 28px;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 100%;
+   max-width: 648px;
+   padding-left: 24px;
+   padding-right: 24px;
+
+   &__trigger {
+      position: absolute;
+      top: 8px;
+      right: 24px;
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      cursor: pointer;
+      
+      &::before,
+      &::after {
+         content: " ";
+         position: absolute;
+         right: 0;
+         width: 24px;
+         height: 1px;
+         background-color: rgba($color-text-dark, 0.72);
+      }
+
+      &::before {
+         top: 8px;
+      }
+
+      &::after {
+         top: 16px;
+         width: 16px;
+      }
    }
 
-   &__link {
-      display: inline-block;
-      margin-bottom: 56px; 
-      font-size: 0.857em;
-      font-weight: 600;
-      text-decoration: none;
-      text-transform: uppercase;
-      color: $color-text-dark;
+   &::after {
+      content: " ";
+      position: absolute;
+      top: 40px;
+      display: block;
+      width: 72px;
+      height: 1px;
+      background-color: rgba($color-text-dark, 0.72);
+   }
 
-      &:last-child {
-         margin-bottom: 0;
+   @include media(min, md) {
+      top: 46px;
+
+      &__trigger {
+         display: none;
       }
+   }
+
+   &.header--fixed {
+      position: fixed;
    }
 }
