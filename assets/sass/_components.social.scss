@@ -37,6 +37,11 @@
       height: 320px;
       line-height: normal;
       writing-mode: tb;
+      writing-mode: tb-rl;
+      // IE
+      writing-mode: vertical-lr;
+      // Opera/webkit
+      writing-mode: sideways-lr;
 
       &__link {
          margin-bottom: 56px; 
