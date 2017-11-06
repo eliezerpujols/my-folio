@@ -19,6 +19,9 @@
 @import "elements.heading";
 @import "elements.paragraph";
 
+// Objects
+@import "objects.resumen";
+
 // Components
 @import "components.header";
 @import "components.menu";
@@ -27,3 +30,6 @@
 @import "components.content";
 @import "components.wrapper";
 @import "components.grid";
+
+// Trumps
+@import "trumps.margins";
